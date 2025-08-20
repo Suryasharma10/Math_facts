@@ -6,8 +6,7 @@ const conclu = document.querySelector("#conclusion");
 let getfacts = async () => {
   console.log("Getting data...");
   let response = await fetch(url);
-  let data = await response.json();
-  factpara.innerText = data.text;
+  factpara.innerText = response;
 
   setTimeout(() => {
     conclu.innerText = "Click on above button";
@@ -16,3 +15,4 @@ let getfacts = async () => {
 
 
 btn.addEventListener("click", getfacts);
+
