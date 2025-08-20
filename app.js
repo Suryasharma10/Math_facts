@@ -11,7 +11,8 @@ let getfacts = async () => {
 
   setTimeout(() => {
     conclu.innerText = "Click on above button";
-  }, 500);
+  }, 2000);
 };
+
 
 btn.addEventListener("click", getfacts);
